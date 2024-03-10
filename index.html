@@ -62,7 +62,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10">
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">JE SUIS<span class="text-brand"> UDAY BHAVSAR</span></h1>
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">JE SUIS <span id="text" class="text-brand"> UDAY BHAVSAR</span></h1>
                         <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300"> Actuellement étudiant en 2ème année du BTS SIO.
                            </p>
                         <div data-aos="fade-up" data-aos-delay="600">
@@ -376,6 +376,14 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>    
+    let typingText = new Typed("#text",{
+    strings : ["Uday BHAVSAR"],
+    typeSpeed: 35
+    })
+    </script>
+
 </body>
 
 </html>
