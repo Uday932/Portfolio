@@ -199,3 +199,60 @@ img {
     border-radius: 100px;
     font-size: 24px;
 }
+
+/* Solid border */
+.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+  .separator {
+    border-top: 1px solid #ccc; /* Couleur et épaisseur du séparateur */
+    margin: 10px 0; /* Marge autour du séparateur */
+}
+
+.service {
+    height: 200px; /* Définir la hauteur de la card */
+    width: 200px; /* Définir la largeur de la card */
+    overflow: hidden; /* Pour s'assurer que le contenu ne dépasse pas les dimensions de la card */
+}     
+
+
+.skills-card {
+    background: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 0px 0px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.15);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.card {
+    width: 150px; /* Largeur de la carte */
+    height: 150px; /* Hauteur de la carte */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Pour s'assurer que le contenu ne dépasse pas les dimensions de la carte */
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content img  {
+    max-width: 100% !important; /* Pour définir la largeur maximale de l'image à 100% de la largeur de son conteneur */
+    height: auto !important; /* Pour conserver le ratio hauteur/largeur de l'image */
+    border-radius: 8px 8px 0 0; /* Coins arrondis uniquement en haut */
+}
+
+.card-text {
+    padding: 8px; /* Espacement du texte à l'intérieur de la carte */
+}
