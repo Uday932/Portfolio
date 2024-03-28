@@ -32,3 +32,77 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+ const form = document.forms['contact-form']
+    const msg = document.getElementById("msg")
+    form. addEventListener('submit ', e =>{
+        e. preventDefauIt()
+        fetch(scriptURL, { method: ' POST',body: new FormData(form)})
+            .then(response => console.log( 'Success! response', response))
+            . catch(error => console.error( ' Error! ',error. message) )
+                                        
+    })
+
+
+    const skills = [
+        // Define your skills here
+    ];
+    
+    window.onload = function() {
+        const skillsContainer = document.querySelector('.skills-container');
+    
+        skills.forEach(skill => {
+            const skillElement = document.createElement('div');
+            skillElement.classList.add('skill');
+    
+            const skillTitle = document.createElement('div');
+            skillTitle.classList.add('skill-title');
+            skillTitle.textContent = skill.title;
+            skillElement.appendChild(skillTitle);
+    
+            const skillList = document.createElement('div');
+            skillList.classList.add('skill-list');
+    
+            skill.skills.forEach(item => {
+                const skillItem = document.createElement('div');
+                skillItem.classList.add('skill-item');
+    
+                const skillImage = document.createElement('img');
+                skillImage.classList.add('skill-image');
+                skillImage.src = item.image;
+    
+                const skillName = document.createElement('div');
+                skillName.textContent = item.name;
+    
+                skillItem.appendChild(skillImage);
+                skillItem.appendChild(skillName);
+                skillList.appendChild(skillItem);
+            });
+    
+            skillElement.appendChild(skillList);
+            skillsContainer.appendChild(skillElement);
+        });
+    };
+
+    // JavaScript pour gérer le filtrage des projets
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.col-md-6');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterValue = button.dataset.filter;
+        projects.forEach(project => {
+            if (filterValue === 'all') {
+                project.style.display = 'block';
+            } else {
+                if (project.classList.contains(filterValue)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            }
+        });
+    });
+});
+
+
