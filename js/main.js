@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Initialiser Typed.js avec l'ID de l'élément HTML cible
     let typingText = new Typed("#text", {
         strings : ["UDAY BHAVSAR"],
-        typeSpeed: 45
+        typeSpeed: 35
     });
 
     const form = document.forms['contact-form']

@@ -84,25 +84,5 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // JavaScript pour gérer le filtrage des projets
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projects = document.querySelectorAll('.col-md-6');
-
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filterValue = button.dataset.filter;
-        projects.forEach(project => {
-            if (filterValue === 'all') {
-                project.style.display = 'block';
-            } else {
-                if (project.classList.contains(filterValue)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
-            }
-        });
-    });
-});
 
 

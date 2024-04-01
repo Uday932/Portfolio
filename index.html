@@ -251,70 +251,54 @@
                         <h1>Mes <span class="text-brand">compétences</span></h1>
                     </div>
                 </div>
-
-                <div class="row gy-4">
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img p-3"><img src="assets/img/HTML5_Badge.svg.png" alt="html"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>HTML</p>
+                    <div class="container" id="skills">
+                        <div class="wrapper">
+                            <div class="skills-container">
+                            <div class="skill"  data-aos="fade-up" data-aos-delay="300">
+                              <div class="skill-title">Frontend</div>
+                              <div class="skill-list">
+                                <div class="skill-item">
+                                  <img src="assets/img/html.png" alt="Skill Image">
+                                  HTML
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/css.png" alt="Skill Image">
+                                    CSS
+                                  </div>
+                                  <div class="skill-item">
+                                  <img src="assets/img/angular.png" alt="Skill Image">
+                                  Angular
+                                </div>
+                                <!-- Add more skill items as needed -->
+                              </div>
                             </div>
+                            <!-- Add more skills as needed -->
+                            <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                                <div class="skill-title">Backend</div>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <img src="assets/img/csharp.png" alt="Skill Image">
+                                        C#
+                                      </div>
+                                    <div class="skill-item">
+                                        <img src="assets/img/sql.png" alt="Skill Image">
+                                        SQL
+                                      </div>
+                                    <div class="skill-item">
+                                        <img src="assets/img/php2.png" alt="Skill Image">
+                                        PHP
+                                    </div>
+                                    <div class="skill-item">
+                                        <img src="assets/img/python.png" alt="Skill Image">
+                                        Python
+                                      </div>
+                                  <!-- Add more backend skill items as needed -->
+                                </div>
+                              </div>
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img p-3"><img src="assets/img/css.png   " alt="css"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>CSS</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img"><img src="assets/img/csharp.png  " alt="c#"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>C#</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img p-3"><img src="assets/img/sql.png  " alt="c#"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>SQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img"><img src="assets/img/php.png  " alt="c#"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>PHP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-lg-2">
-                        <div class="service py-3 bg-base rounded-4 shadow-effect">
-                             <div class="skills-img p-4"><img src="assets/img/angular.png  " alt="c#"></div>
-                            <hr class="separator"> <!-- Ajout du séparateur -->
-    
-                            <div class="text-center mt-2">
-                                <p>Angular</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    
+                        
+                      </div>
 
             </div>
         </section>
@@ -510,7 +494,8 @@
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/aos.js"></script>
-    <script>src="./js/scripts.js"</script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>  
     <script src="assets/jquery/jquery-3.4.1.js"></script>  
@@ -530,12 +515,6 @@
         });
         </script>
     <script>    
-    let typingText = new Typed("#text",{
-    strings : ["Uday BHAVSAR"],
-    typeSpeed: 35
-    })
-
-
     // JavaScript pour gérer le filtrage des projets
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projects = document.querySelectorAll('.col-md-6');
