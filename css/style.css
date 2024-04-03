@@ -115,6 +115,13 @@ img {
     }
 }
 
+/* ABOUT*/
+@media (max-width: 768px) {
+    #about .lead {
+        font-size: 16px; /* Réduire la taille de la police pour les paragraphes avec la classe "lead" */
+    }
+}
+
 /* BTN */
 .btn {
     padding: 12px 28px;
@@ -288,7 +295,7 @@ display: flex; /* Afficher l'overlay au survol de la carte */
 
 
 
-.wrapper {
+ .wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -303,7 +310,7 @@ display: flex; /* Afficher l'overlay au survol de la carte */
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  color: #666; /* change color as needed */
+  color: #666; 
 }
 
 .skills-container {
@@ -343,7 +350,7 @@ display: flex; /* Afficher l'overlay au survol de la carte */
 .skill-item {
   font-size: 16px;
   font-weight: 400;
-  border: 1px solid #999; /* change border color as needed */
+  border: 1px solid #999; 
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -355,4 +362,151 @@ display: flex; /* Afficher l'overlay au survol de la carte */
 .skill-item img {
   width: 24px;
   height: 24px;
+} 
+
+/* FILTRE */
+
+.filter-buttons {
+    margin-top: 30px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    background-color: #90b355;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #022042;
+}
+
+/* PROJECTS */
+
+.project-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 16px;
+    align-items: center;
+}
+
+.project-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    gap: 12px;
+}
+
+.project-title {
+    font-size: 52px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333; /* Couleur dpoweru texte primaire */
+}
+
+.project-desc {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #666; /* Couleur du texte secondaire */
+}
+
+.project-toggle-buttons {
+    display: flex;
+    border: 1.5px solid #007bff; /* Couleur du thème primaire */
+    color: #007bff; /* Couleur du thème primaire */
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 22px 0;
+}
+
+.project-toggle-button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.project-toggle-divider {
+    width: 1.5px;
+    background: #007bff; /* Couleur du thème primaire */
+}
+
+.project-toggle-button.active {
+    background: #007bff; /* Couleur du thème primaire */
+    color: #fff; /* Couleur du texte en surbrillance */
+}
+
+.project-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+/* MODAL*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #333; /* Couleur de fond bleu foncé */
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #fff; /* Couleur du texte */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.project-description {
+    color: #fff; /* Couleur du texte */
+    margin-top: 20px;
+}
+
+.buttons-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Autres styles */
+.card-custom {
+    /* Couleur de fond bleu foncé */
+    /* Autres styles de la carte */
+}
+
+.card-custom-image img {
+    width: 600px; /* Taille de l'image */
+    height: 200px;
+}
+
+.hidden {
+    display: none;
 }

@@ -84,5 +84,32 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+    // Script pour ouvrir et fermer le modal
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 
+function openModal(project) {
+    modal.style.display = "block";
+    var modalImg = document.getElementById("modal-img");
+    modalImg.src = project.image;
+    var projectDesc = document.querySelector(".project-description");
+    projectDesc.textContent = project.description;
+    var githubBtn = document.getElementById("github-btn");
+    githubBtn.onclick = function() {
+        window.open(project.githubLink, "_blank");
+    };
+    var pdfBtn = document.getElementById("pdf-btn");
+    pdfBtn.onclick = function() {
+        window.open(project.pdfLink, "_blank");
+    };
+}
 
+span.onclick = function() {
+    modal.style.display = "none";
+};
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};

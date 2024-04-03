@@ -46,7 +46,7 @@
                         <a class="nav-link" href="#services">Compétences</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#work">Projets</a>
+                        <a class="nav-link" href="#projects">Projets</a>
                     </li>   
                     <li class="nav-item">
                         <a class="nav-link" href="#veille">Veille</a>
@@ -294,8 +294,37 @@
                                       </div>
                                   <!-- Add more backend skill items as needed -->
                                 </div>
-                              </div>
                           </div>
+                          <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-title">Autres</div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <img src="assets/img/github.png" alt="Skill Image">
+                                    Github
+                                  </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/vscode.png" alt="Skill Image">
+                                    Visual Studio Code
+                                  </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/vs-studio.png" alt="Skill Image">
+                                    Visual Studio
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/photoshop.png" alt="Skill Image">
+                                   Photoshop
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/after-effects.png" alt="Skill Image">
+                                    After effects
+                                </div>
+                                <div class="skill-item">
+                                    <img src="assets/img/canva.png" alt="Skill Image">
+                                    Canva
+                                  </div>
+                              <!-- Add more backend skill items as needed -->
+                            </div>
+                      </div>
                         </div>
                         
                       </div>
@@ -307,8 +336,9 @@
 
         <!-- SERVICES -->
 
-        <!-- WORK -->
-        <section id="work" class="full-height px-lg-5">
+        <!-- WORK -->   
+        <!-- Placez chaque modal à l'extérieur de la section "work" -->
+        <section id="projects" class="full-height px-lg-5">
             <div class="container">
 
                       <div class="row pb-4" data-aos="fade-up">
@@ -322,7 +352,8 @@
                             <button class="filter-btn" data-filter="formations">Projets en formation</button>
                         </div>
                     </div>
-            
+
+                           
 
                 <div class="row gy-4">
 
@@ -332,7 +363,7 @@
                                 <a href="assets/uday_tp8/uday_tp8.html"> <!-- Lien vers la source -->
                                     <img class="rounded-4" src="assets/img/TP8.png" alt="Description de l'image">
                                     <div class="overlay">
-                                        <a href="assets/uday_tp8/uday_tp8.html" class="btn-more">En savoir plus</a> <!-- Bouton "En savoir plus" -->
+                                        <a class="btn-more" data-modal="projectModal1">En savoir plus</a> <!-- Bouton "En savoir plus" -->
                                     </div>
                                 </a>
                             </div>
@@ -386,24 +417,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 personnels" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <a href="assets/ChronoFlop/index.html"> <!-- Lien vers la source -->
-                                    <img class="rounded-4 custom-image" src="assets/img/plane_game.png" alt="Description de l'image">
-                                    <div class="overlay">
-                                        <a href="https://github.com/Uday932/flappy_plane" class="btn-more">En savoir plus</a> <!-- Bouton "En savoir plus" -->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Création d'un jeu</h4>
-                                <p class="mb-0">J'ai créer ce jeu grâce au langage python qui comporte une bibliothèque du nom de pygame.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 personnels" data-aos="fade-up">
+                    <div class="col-md-6 formations" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="assets/ChronoFlop/index.html"> <!-- Lien vers la source -->
@@ -420,7 +434,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 personnels" data-aos="fade-up">
+                    <div class="col-md-6 formations" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="assets/ChronoFlop/index.html"> <!-- Lien vers la source -->
@@ -437,7 +451,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 personnels" data-aos="fade-up">
+                    <div class="col-md-6 formations" data-aos="fade-up">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
                                 <a href="assets/ChronoFlop/index.html"> <!-- Lien vers la source -->
@@ -448,17 +462,42 @@
                                 </a>
                             </div>
                             <div class="card-custom-content p-4">
-                                <h4>Gsb Rapports</h4>
+                                <h4 >Gsb Rapports</h4>
                                 <p class="mb-0">J'ai créer ce jeu grâce au langage python qui comporte une bibliothèque du nom de pygame.</p>
                             </div>
                         </div>
                     </div>
 
-                    
-
-            
+                    <div class="col-md-6 personnels" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <a href="assets/ChronoFlop/index.html"> <!-- Lien vers la source -->
+                                    <img class="rounded-4 custom-image" src="assets/img/plane_game.png" alt="Description de l'image">
+                                    <div class="overlay">
+                                        <a href="https://github.com/Uday932/flappy_plane" class="btn-more">En savoir plus</a> <!-- Bouton "En savoir plus" -->
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Création d'un jeu</h4>
+                                <p class="mb-0">J'ai créer ce jeu grâce au langage python qui comporte une bibliothèque du nom de pygame.</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
+            <div id="projectModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img id="modal-image" src="" alt="Project Image" class="modal-image">
+                  <div class="tags" id="modal-tags"></div>
+                  <div class="description" id="modal-description"></div>
+                  <a id="github-link" href="#" class="modal-btn">Voir le projet sur GitHub</a>
+                  <a id="pdf-link" href="#" class="modal-btn">Ouvrir le PDF</a>
+                </div>
+              </div>
         </section>
+        <!-- Modal -->
+
         <!-- //WORK -->
        
         <!-- VEILLE INFORMATIONNELLE -->
@@ -474,7 +513,6 @@
                 <div class="row gy-5">
                     <div class="col-12" data-aos="fade-up" data-aos-delay="300">
                     <p class="lead mt-2 mb-4" data-aos="fade-right" data-aos-delay="300" data-aos-easing="ease-in-sine"> 
-                        <!-- Bah y aura la veille ici ca arrive tkt &#128293;&#128293; -->
                         Mon sujet de la veille est le framework Angular.
                         </p>
                     </div>
@@ -534,7 +572,7 @@
         <footer class="py-3">
             <div class="text-center">
                     <div class="col-auto">
-                        2024 © BHAVSAR Uday
+                        2024 © BHAVSAR Uday | Tous droits réservés.
                     </div>
             </div>
         </footer>
@@ -567,30 +605,59 @@
           speed: 2000 // How many milliseconds until the next word show.
         });
         </script>
-    <script>    
-    // JavaScript pour gérer le filtrage des projets
-const filterButtons = document.querySelectorAll('.filter-btn');
-const projects = document.querySelectorAll('.col-md-6');
+<script>
+   // Récupère tous les boutons de filtre
+var filterButtons = document.querySelectorAll('.filter-btn');
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filterValue = button.dataset.filter;
-        projects.forEach(project => {
-            if (filterValue === 'all') {
-                project.style.display = 'block';
+// Récupère tous les projets
+var projects = document.querySelectorAll('.col-md-6');
+
+// Ajoute un gestionnaire d'événements à chaque bouton de filtre
+filterButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var filterValue = this.getAttribute('data-filter'); // Récupère la valeur de filtre
+
+        // Affiche ou masque les projets en fonction de la catégorie sélectionnée
+        projects.forEach(function(project) {
+            if (filterValue === 'all' || project.classList.contains(filterValue)) {
+                project.classList.remove('hidden');
             } else {
-                if (project.classList.contains(filterValue)) {
-                    project.style.display = 'block';
-                } else {
-                    project.style.display = 'none';
-                }
+                project.classList.add('hidden');
             }
         });
     });
 });
-    
-    </script>
 
+    // Sélectionnez tous les boutons "En savoir plus"
+    var btns = document.querySelectorAll('.btn-more');
+
+    // Lorsque l'utilisateur clique sur un bouton "En savoir plus"
+    btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            // Récupérez l'identifiant unique du modal pour ce projet
+            var modalId = this.getAttribute('data-modal');
+            var modal = document.getElementById(modalId);
+            // Récupérez les données spécifiques à ce projet à partir des attributs de données
+            var imageSrc = this.parentElement.parentElement.querySelector('img').src;
+            var tags = this.parentElement.parentElement.querySelectorAll('.tags')[0].innerHTML;
+            var description = this.parentElement.parentElement.querySelectorAll('.description')[0].innerHTML;
+            var githubLink = this.getAttribute('data-github');
+            var pdfLink = this.getAttribute('data-pdf');
+
+            // Mettez à jour le contenu du modal avec les données spécifiques à ce projet
+            modal.querySelector('.modal-image').src = imageSrc;
+            modal.querySelector('.modal-tags').innerHTML = tags;
+            modal.querySelector('.modal-description').innerHTML = description;
+            modal.querySelector('.modal-btn.github').href = githubLink;
+            modal.querySelector('.modal-btn.pdf').href = pdfLink;
+
+            // Affichez le modal
+            modal.style.display = "block";
+        });
+    });
+
+    // Gérez la fermeture du modal de manière similaire à la première méthode
+</script>
     <script>    
     AOS.init();
     </script>
